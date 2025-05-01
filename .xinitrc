@@ -76,5 +76,6 @@ exec slstatus &
 dunst &
 discord &
 kde-connect &
+xclip &
 
 exec dwm

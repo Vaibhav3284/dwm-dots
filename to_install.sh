@@ -32,3 +32,5 @@ ln -sf ~/dotfiles2/.xinitrc ~/
 rm -rf ~/.bashrc
 ln -sf ~/dotfiles2/.bashrc ~/
 
+rm -rf ~/zsh
+ln -sf ~/dotfiles2/zsh ~/

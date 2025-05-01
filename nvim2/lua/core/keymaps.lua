@@ -52,13 +52,13 @@ keymap.set("n", "<leader>er", ":NvimTreeFocus<CR>")    -- toggle focus to file e
 keymap.set("n", "<leader>ef", ":NvimTreeFindFile<CR>") -- find file in file explorer
 
 -- Telescope
-keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, {})                                              -- fuzzy find files in project
-keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, {})                                               -- grep file contents in project
-keymap.set('n', '<leader>fb', require('telescope.builtin').buffers, {})                                                 -- fuzzy find open buffers
-keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, {})                                               -- fuzzy find help tags
-keymap.set('n', '<leader>fs', require('telescope.builtin').current_buffer_fuzzy_find, {})                               -- fuzzy find in current file buffer
-keymap.set('n', '<leader>fo', require('telescope.builtin').lsp_document_symbols, {})                                    -- fuzzy find LSP/class symbols
-keymap.set('n', '<leader>fi', require('telescope.builtin').lsp_incoming_calls, {})                                      -- fuzzy find LSP/incoming calls
+keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, {})     -- fuzzy find files in project
+keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, {})     -- grep file contents in project
+keymap.set('n', '<leader>fb', require('telescope.builtin').buffers, {})        -- fuzzy find open buffers
+keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, {})       -- fuzzy find help tags
+keymap.set('n', '<leader>fs', require('telescope.builtin').current_buffer_fuzzy_find, {})  -- fuzzy find in current file buffer
+keymap.set('n', '<leader>fo', require('telescope.builtin').lsp_document_symbols, {})   -- fuzzy find LSP/class symbols
+keymap.set('n', '<leader>fi', require('telescope.builtin').lsp_incoming_calls, {})        -- fuzzy find LSP/incoming calls
 -- keymap.set('n', '<leader>fm', function() require('telescope.builtin').treesitter({default_text=":method:"}) end) -- fuzzy find methods in current class
 keymap.set('n', '<leader>fm', function() require('telescope.builtin').treesitter({ symbols = { 'function', 'method' } }) end) -- fuzzy find methods in current class
 keymap.set('n', '<leader>ft', function()                                                                                -- grep file contents in current nvim-tree node
