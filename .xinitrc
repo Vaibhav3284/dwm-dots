@@ -11,9 +11,8 @@ feh --bg-scale /home/bored/.config/wallpapers/title/gruvbox_country_side.png
 # wal -i "$(< "${HOME}/.cache/wal/wal")"
 
 
-# mocp -S 
-# mocp -o shuffle
-# mocp -p ~/Music/autostart
+/usr/bin/mocp-scrobbler.py -d &
+mocp -S 
 
 # picom -b --experimental-backends --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffnes 150 &
 # picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffnes 150 &
@@ -22,5 +21,6 @@ picom &
 # dwmblocks &
 exec slstatus &
 dunst &
-
+discord &
+kdeconnect &
 exec dwm

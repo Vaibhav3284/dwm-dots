@@ -1,0 +1,6 @@
+[scrobbler]
+login = bored269
+streams = true
+hostname = post.audioscrobbler.com
+password_md5 = 2245fdeadf69b92cc73e1e815dfa629e
+

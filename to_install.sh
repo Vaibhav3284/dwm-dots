@@ -34,3 +34,9 @@ ln -sf ~/dotfiles2/.bashrc ~/
 
 rm -rf ~/zsh
 ln -sf ~/dotfiles2/zsh ~/
+
+rm -rf ~/.moc
+ln -sf ~/dotfiles2/.moc ~/
+
+rm -rf ~/.mocpscrob
+ln -sf ~/dotfiles2/.mocpscrob ~/
