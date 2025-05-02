@@ -66,12 +66,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ disk_used, "   %s | ", "/" },
-	{ keymap, "  %s",	NULL },
+//	{ disk_used, "   %s | ", "/" },
+//	{ keymap, "  %s",	NULL },
 	{ keyboard_indicators, "%s | ",	"c?" },
 	// { cpu_perc, "󰍛 %s%% | ",	NULL },
 	{ ram_used, "%s | ",	NULL },
 	{ run_command, "󰕾 %s | ", "pamixer --get-volume-human" },
+	{ run_command, "%s | ", "pactl get-source-mute @DEFAULT_SOURCE@" },
 	{ datetime, "󰨲 %s",           "%a %b %d, %I:%M %p" },
 //	{ disk_used, " [   %s ] ", "/" },
 //	{ keymap, "[   %s ] ",	NULL },
