@@ -15,3 +15,4 @@ if [[ $TERM == "xterm-kitty" ]]; then
 else
   :
 fi
+. "$HOME/.cargo/env"

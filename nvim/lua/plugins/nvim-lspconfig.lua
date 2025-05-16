@@ -44,7 +44,7 @@ return {
     end
 
     -- Call setup on each LSP server
-    require('mason-lspconfig').setup_handlers({
+    require('mason-lspconfig').setup({
       function(server_name)
         lspconfig[server_name].setup({
           on_attach = lsp_attach,
@@ -63,6 +63,14 @@ return {
           },
         },
       },
+    }
+
+    lspconfig.rust_analyzer.setup {
+      capabilities = capabilities,
+      on_attach = on_attach,
+      cmd = {
+        "rustup", "run", "stable", 'rust-analyzer',
+      }
     }
 
     -- Globally configure all LSP floating preview popups (like hover, signature help, etc)

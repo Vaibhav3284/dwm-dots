@@ -18,9 +18,13 @@ mocp -S
 # picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffnes 150 &
 # picom --experimental-backend &
 picom &
-# dwmblocks &
+
+dwmblocks &
 exec slstatus &
 dunst &
-discord &
-kdeconnect &
+discord --start-minimized &
+blueman &
+blueman-applet &
+nm-applet &
+# thunar --daemon
 exec dwm
