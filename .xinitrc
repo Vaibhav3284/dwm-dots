@@ -10,14 +10,12 @@ feh --bg-scale /home/bored/.config/wallpapers/title/gruvbox_country_side.png
 # Add this to your .xinitrc or whatever file starts programs on startup.
 # wal -i "$(< "${HOME}/.cache/wal/wal")"
 
-
-/usr/bin/mocp-scrobbler.py -d &
 mocp -S 
 
 # picom -b --experimental-backends --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffnes 150 &
 # picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffnes 150 &
 # picom --experimental-backend &
-picom &
+# picom &
 
 dwmblocks &
 exec slstatus &
@@ -26,5 +24,4 @@ discord --start-minimized &
 blueman &
 blueman-applet &
 nm-applet &
-# thunar --daemon
 exec dwm
