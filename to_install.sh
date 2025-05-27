@@ -2,7 +2,7 @@ echo "Linking..."
 
 rm -rf ~/dwm
 ln -sf ~/dotfiles2/dwm ~/
-cd ~/.config/dwm/ && sudo make install
+cd ~/dwm/ && sudo make install
 
 rm -rf ~/.config/kitty
 ln -sf ~/dotfiles2/kitty ~/.config/

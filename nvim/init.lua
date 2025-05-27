@@ -1,28 +1,33 @@
--- Bootstrap lazy
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+
+local disabled_providers = {
+  "node",
+  "perl",
+  "ruby",
+}
+
+for _, provider in pairs(disabled_providers) do
+  vim.g["loaded_" .. provider .. "_provider"] = 0
 end
-vim.opt.rtp:prepend(lazypath)
 
--- This has to be set before initializing lazy
-vim.g.mapleader = " "
 
--- Initialize lazy with dynamic loading of anything in the plugins directory
-require("lazy").setup("plugins", {
-   change_detection = {
-    enabled = true, -- automatically check for config file changes and reload the ui
-    notify = false, -- turn off notifications whenever plugin changes are made
-  },
-})
+-- list of all config files
 
--- These modules are not loaded by lazy
-require("core.options")
-require("core.keymaps")
+local config_files = {
+  "options",
+  "keymaps",
+  "colors",
+  "diagnostics",
+  "statusline",
+  "plugins",
+  "lsp",
+}
+
+for _, file in pairs(config_files) do
+
+  local success = pcall(require, file)
+  if not success then
+    vim.notify("Failed to load a config file " .. file)
+    break
+  end
+
+end

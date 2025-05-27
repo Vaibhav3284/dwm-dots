@@ -289,7 +289,7 @@ static const int color_ptrs[][ColCount] = {
 };
 #endif // BAR_VTCOLORS_PATCH
 
-#include "/home/bored/dwm/templates/japanese-colors.h"
+#include "/home/bored/dwm/templates/wallpaper-white-colors.h"
 static char c000000[]                    = "#000000"; // placeholder value
 
 static char *colors[][ColCount] = {
@@ -974,10 +974,6 @@ static const char *flamcmd[]  = { "flameshot", "gui", NULL };
 static const char *flamfcmd[]  = { "flameshot", "full" , "-c", "-p", "~/Pictures/Screenshots", NULL };
 static const char *filemg[]  = { "kitty", "ranger", NULL };
 static const char *browser[]  = { "floorp", NULL };
-static const char *startmus[]  = { "mocp", "-p", NULL };
-static const char *stopmus[]  = { "mocp", "-s", NULL };
-static const char *nextmus[]  = { "mocp", "-f", NULL };
-static const char *prevmus[]  = { "mocp", "-r", NULL };
 static const char *upvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL };
@@ -990,10 +986,6 @@ static const Key keys[] = {
 	{ 0,                         		XK_Print,  		spawn,          		{.v = flamcmd } },
 	{ MODKEY|ShiftMask,             XK_Print,  		spawn,          		{.v = flamfcmd } },
 	{ MODKEY,                     	XK_e,	   		spawn,          		{.v = filemg } },
-	{ MODKEY,             		      XK_s,	   		spawn,          		{.v = startmus } },
-	{ MODKEY|ShiftMask,             XK_s,	  		spawn,          		{.v = stopmus } },
-	{ MODKEY,               	      XK_n,	  		spawn,          		{.v = nextmus } },
-	{ MODKEY|ShiftMask,             XK_n,	 		spawn,          		{.v = prevmus } },
 	{ 0,                            XF86XK_AudioLowerVolume,    spawn,        {.v = downvol } },
 //{ 0,                          XF86XK_AudioMute,           spawn,        {.v = mutevol } },
 	{ 0,                          	XF86XK_AudioMute,  	    spawn,       {.v = mutevol} },
