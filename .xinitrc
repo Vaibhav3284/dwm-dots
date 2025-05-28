@@ -3,7 +3,7 @@
 xrandr --output VGA-1 --mode 1366x768
 # feh --bg-scale /home/bored/.config/wallpapers/fav/anime_white.jpg
 # feh --bg-scale /home/bored/.config/wallpapers/fav/japanese.png
-feh --bg-scale /home/bored/.config/wallpapers/title/gruvbox_country_side.png
+feh --bg-scale /home/bored/.config/wallpapers/fav/chris-herath-FcvIlm3I2Ts-unsplash.jpg
 # feh --bg-scale /home/bored/.config/wallpapers/fav/aes.jpg
 # wal -R &
 

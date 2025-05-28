@@ -970,6 +970,7 @@ ResourcePref resources[] = {
 
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *roficmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
+static const char *rofip[] = { "rofi", "-show", "drun", "-show-icons", NULL };
 static const char *flamcmd[]  = { "flameshot", "gui", NULL };
 static const char *flamfcmd[]  = { "flameshot", "full" , "-c", "-p", "~/Pictures/Screenshots", NULL };
 static const char *filemg[]  = { "kitty", "ranger", NULL };

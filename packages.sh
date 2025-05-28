@@ -4,4 +4,5 @@ sudo pacman -S --noconfirm --needed wireplumber pulseaudio pavucontrol kitty nvi
 yay -S --noconfirm --needed sct everforest-gtk-theme-git everforest-icon-theme-git
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/vinceliuice/Graphite-gtk-theme.git ~/ && cd ~/Graphite-gtk-theme && ./install.sh
 
